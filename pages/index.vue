@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div>这是首页？怎么搞？</div>
+    <div>这是首页？怎么搞？搞不赢</div>
     <h3>{{ $store.state.test }}</h3>
     <el-button @click="changeName('xxx')">修改</el-button>
   </div>
