@@ -8,19 +8,19 @@
 
 <script>
 import axios from 'axios'
-import { mapMutations } from 'vuex'
-// import { mapState, mapMutations } from 'vuex'
+// import { mapMutations } from 'vuex'
+import { mapState, mapMutations } from 'vuex'
 export default {
   data() {
     return {
       title: '首页'
     }
   },
-  // computed: {
-  //   ...mapState('app', {
-  //     name: (state) => state.name
-  //   })
-  // },
+  computed: {
+    ...mapState('app', {
+      name: (state) => state.name
+    })
+  },
   async asyncData() {
     const { data } = await axios.get('https://api.myjson.com/bins/8gdmr')
     return { asyncdata: data }
