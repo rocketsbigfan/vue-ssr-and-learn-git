@@ -31,7 +31,6 @@ export default {
     }
   },
   mounted() {},
-  destroyed() {},
   methods: {
     ...mapMutations({
       changeName: 'app/changeName'
